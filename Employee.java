@@ -1,4 +1,4 @@
- public class Employee {
+public class Employee {
     // Attributes
     private int id;
     private String firstName;
@@ -53,6 +53,22 @@
     public String toString() {
         return "Employee[id=" + id + ", name=" + getName() + ", salary=" + salary + "]";
     }
-}
     
-
+    // Main method to execute the program
+    public static void main(String[] args) {
+        // Create an Employee object
+        Employee employee = new Employee(101, "John", "Doe", 50000);
+        
+        // Display employee information
+        System.out.println("Employee details:");
+        System.out.println(employee);
+        
+        // Raise employee salary by 10%
+        System.out.println("Raising employee salary by 10%...");
+        employee.raiseSalary(10);
+        
+        // Display updated employee information
+        System.out.println("Updated employee details:");
+        System.out.println(employee);
+    }
+}
