@@ -48,4 +48,22 @@
             System.out.println("Cannot add sugar. Prepare basic tea first.");
         }
     }
-} 
+    
+    // Main method to execute the program
+    public static void main(String[] args) {
+        // Create a Tea object
+        Tea tea = new Tea();
+        
+        // Prepare basic tea
+        System.out.println("Preparing basic tea...");
+        tea.prepareTea();
+        
+        // Add milk to the tea
+        System.out.println("\nAdding milk to the tea...");
+        tea.addMilk();
+        
+        // Add sugar to the tea
+        System.out.println("\nAdding sugar to the tea...");
+        tea.addSugar();
+    }
+}
